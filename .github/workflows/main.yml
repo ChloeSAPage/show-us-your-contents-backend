@@ -3,6 +3,7 @@ name: Run Supabase Script
 on:
   schedule:
     - cron: "0 0 */5 * *"  # Cron expression to run every 5 days
+  workflow_dispatch:
 
 jobs:
   run-selenium:
