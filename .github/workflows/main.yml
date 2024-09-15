@@ -8,10 +8,10 @@ on:
 jobs:
   run-selenium:
     runs-on: ubuntu-latest
-
-  steps:
-    - shell: bash
-      env:
-        API_URL: ${{ secrets.API_URL }}
-      run: |
-        curl "%API_URL"
+  
+    steps:
+      - shell: bash
+        env:
+          API_URL: ${{ secrets.API_URL }}
+        run: |
+          curl "%API_URL"
