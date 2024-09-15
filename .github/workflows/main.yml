@@ -14,4 +14,4 @@ jobs:
         env:
           API_URL: ${{ secrets.API_URL }}
         run: |
-          curl "%API_URL"
+          curl "$API_URL"
