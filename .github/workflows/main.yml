@@ -1,4 +1,4 @@
-name: Run Supabase Script
+name: Make request
 
 on:
   schedule:
@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-selenium:
+  make-request:
     runs-on: ubuntu-latest
   
     steps:
